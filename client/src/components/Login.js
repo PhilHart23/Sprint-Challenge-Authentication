@@ -28,7 +28,7 @@ export default class Login extends Component {
       .post("http://localhost:3300/api/login", this.state.user)
       .then(res => {
         console.log(res.data);
-        if (res.status === 201) {
+        if (res.status === 200) {
           this.setState({
             user: { ...initialUser },
             message: "Login Successful!"

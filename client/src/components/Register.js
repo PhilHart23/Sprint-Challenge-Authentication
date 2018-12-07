@@ -29,7 +29,7 @@ export default class Register extends Component {
       .then((res) => {
         if (res.status === 201) {
           this.setState({
-            message: 'Registration successful',
+            message: 'Registration Successful',
             user: { ...initialUser },
           });
         } else {
@@ -38,7 +38,7 @@ export default class Register extends Component {
       })
       .catch((err) => {
         this.setState({
-          message: 'Registration failed.',
+          message: 'Registration Failed.',
           user: { ...initialUser },
         });
       });
