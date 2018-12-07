@@ -31,7 +31,7 @@ export default class Login extends Component {
         if (res.status === 201) {
           this.setState({
             user: { ...initialUser },
-            message: "Login successful!"
+            message: "Login Successful!"
           });
           localStorage.setItem("jwt", res.data.token);
         } else {
@@ -41,7 +41,7 @@ export default class Login extends Component {
       .catch(err => {
         this.setState({
           user: { ...initialUser },
-          message: "Login failed"
+          message: "Login Failed"
         });
       });
   };
